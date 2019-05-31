@@ -29,6 +29,7 @@ GEM
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
     jekyll-minibundle (2.2.0)
+    jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
     jekyll-watch (2.2.1)
@@ -63,6 +64,7 @@ DEPENDENCIES
   coderay
   jekyll (= 3.7.4)
   jekyll-minibundle
+  jekyll-paginate
   rake
   rouge
 

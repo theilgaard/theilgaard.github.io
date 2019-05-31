@@ -3,6 +3,8 @@ tagline:          Code and crisps
 description:      Describe your website.
 url: https://theilgaard.dev
 canonical: https://theilgaard.dev
+paginate: 5
+paginate_path: "/page:num/"
 
 # Owner/author information
 owner:
@@ -54,6 +56,10 @@ sass:
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title
+
+plugins: [
+  jekyll-paginate,
+]
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp"]
