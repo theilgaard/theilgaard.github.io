@@ -15,7 +15,7 @@ These two challenges required us to circumvent a cleared `PATH` environment vari
                                      
 In the first challenge, the program has a small filter, that doesn't include `/`
                           
-```c                                    
+{% highlight c %}                                    
 #include <stdio.h>                    
 #include <string.h>                                      
                                      
@@ -32,7 +32,7 @@ int main(int argc, char* argv[], char** envp){
         system( argv[1] );                                
         return 0;              
 }                              
-```                                           
+{% endhighlight %}
                              
 Omitting this filter is rather easy with sh's `*` expansion and a full path to the executeable we wish to utilize.
                                      
@@ -43,7 +43,7 @@ Omitting this filter is rather easy with sh's `*` expansion and a full path to t
 
 In the second challenge, the program has a larger filter, and clears all environment variables. 
 
-```c
+{% highlight c %}                                    
 #include <stdio.h>
 #include <string.h>
 
@@ -72,7 +72,7 @@ int main(int argc, char* argv[], char** envp){
         system( argv[1] );
         return 0;
 }
-```
+{% endhighlight %}
 
 This makes us unable to use the solution from the first challenge, as it includes `/` for the program name.
 
