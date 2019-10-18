@@ -10,13 +10,14 @@ In this post we solve the *lotto* challenge of [pwnable.kr](https://www.pwnable.
 
 The challenge starts by inviting us to play a game of chance 
 
-```
+{% highlight bash %}
 Mommy! I made a lotto program for my homework.
 do you want to play?
 
 
 ssh lotto@pwnable.kr -p2222 (pw:guest)
-```
+{% endhighlight %}
+
 Inspecting the code, it reads 6 bytes from `/dev/urandom` which leaves us with 256^6 possible values. My initial thought, before seeing the code was that this would be poorly implemented seeding and use of a random integer function, however, `/dev/urandom/` is safe as it is seeded by the OS during boot. 
 
 Later in the code, the check against the password is made, looping over the random bytes and the user input 36 times. An `int` is incremented for each match. 
