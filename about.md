@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: page
 permalink: /about/index.html
-title: Kristian Theilgaard 
+title: 
 tags: [about, Jekyll, theme, responsive]
 ---
 
