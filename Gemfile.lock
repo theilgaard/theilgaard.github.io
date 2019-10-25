@@ -64,7 +64,6 @@ DEPENDENCIES
   coderay
   jekyll (= 3.7.4)
   jekyll-minibundle
-  jekyll-paginate
   rake
   rouge
 
