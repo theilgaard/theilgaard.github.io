@@ -12,7 +12,7 @@ Searching for a new occupation is a journey in itself, with recruiters and inter
 
 Here, the word colleague is absolutely key when compared to the word employee, or human resource. We are humans, still, and just like I shouldn't treat my potential job as merely a source of money and benefits but a place where I spend most of my conscious hours, it is preferable that my upcoming manager sees the human behind the workhorse.
 
-In Danish, a job interview is called a job conversation (Jobsamtale). Here the words play a vital part again. The difference being that a conversation doesn't merely allow for one part to present a list of interview questions.  While interview questions may serve as a great tool as an opener for conversation, a conversation is something entirely different, where you both give and take in equal amounts to arrive in some pleasant middle-ground that hopefully reveals whether the fit is right or not.
+In Danish, a job interview is called a job conversation (Jobsamtale). Here the words play a vital part again. The difference being that a conversation doesn't allow for one part to merely present a list of interview questions.  While interview questions may serve as a great tool as an opener for conversation, a conversation is something entirely different, where you both give and take in equal amounts to arrive in some pleasant middle-ground that hopefully reveals whether the fit is right or not.
 
 In order for me to care about the work you are doing, I need to know something about it! 
 
