@@ -34,6 +34,7 @@ RUN apt-get update && \
     python3-dev \
     python3-pip \
     python3-venv && \
+    rm -rf /var/lib/apt/lists/* && \
     python3 -m venv .venv 
 
 # Copy in poetry and dependency list
@@ -73,3 +74,10 @@ Next, poetry installation files, and the dependency list is copied in seperately
 Finally the application code is copied in, the `PATH` variable is updated to utilize the virtual environment, and the WSGI port is exposed at port 8000.
 
 In this current image, only a running production uWSGI instance is considered. But the image could easily be updated to provide automatic testing in a continues integration environment, using the same dependency acquisition chain.
+
+### Virtual Environments in a docker container? Why?
+As the docker container already offers isolation from the host system, a virtual environment might seem quite unnecessary. However, utilizing a virtual environment allows for development on the host, using the same dependency isolation in production and development. Thus the runtime environment should be exactly the same in production and development.
+
+An altenative could be to use a mounted volume for the application code in the container, and then develop with the container running, but this breaks with the image being completely self contained.
+
+Finally, it is considered good practice not to clutter your system with application dependencies. This should also apply in the docker image, as a system dependency might conflict with an application dependency later in development.
