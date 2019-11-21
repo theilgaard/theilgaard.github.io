@@ -2,7 +2,7 @@
 layout: post
 title: "A Dockerfile for CTF"
 date: 2019-11-13 +0100
-categories: work
+categories: ctf 
 ---
 Capture The Flag competitions usually require a set of tools to help you analyze, reverse engineer and exploits challenges.
 
