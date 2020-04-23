@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
 <meta charset="utf-8">
 <title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
 <meta name="description" content="{{ page.description }}">
@@ -51,26 +52,26 @@
 <!-- Icons -->
 <!-- 16x16 -->
 <link rel="shortcut icon" href="{{ site.url }}/favicon.png">
-
+</head>
+<body>
 <div id="bump">
-  <body class="">
-    <header class="site-header darken">
-      <div class="wrap">
-        <hgroup>
-          <h1><a href="/">{{ site.title }}</a></h1>
-        </hgroup>
-        <a href="#nav" class="menu"><span class='icons'>☰</span></a>
-        <nav role="navigation">
-          <ul>
-            <li>
-              <a href="/" title="{{ site.url }}">Home</a>
-            </li>
-            
-            {% for link in site.links %}
-                <li><a href="{% if link.external %}{{ link.url }}{% else %}{{ site.url }}{{ link.url }}{% endif %}" {% if link.external %}target="_blank"{% endif %}>{{ link.title }}</a></li>
-            {% endfor %}
+  <header class="site-header darken">
+    <div class="wrap">
+      <hgroup>
+        <h1><a href="/">{{ site.title }}</a></h1>
+      </hgroup>
+      <a href="#nav" class="menu"><span class='icons'>☰</span></a>
+      <nav role="navigation">
+        <ul>
+          <li>
+            <a href="/" title="{{ site.url }}">Home</a>
+          </li>
+          
+          {% for link in site.links %}
+              <li><a href="{% if link.external %}{{ link.url }}{% else %}{{ site.url }}{{ link.url }}{% endif %}" {% if link.external %}target="_blank"{% endif %}>{{ link.title }}</a></li>
+          {% endfor %}
 
-          </ul>
-        </nav>
-      </div>
-    </header>
+        </ul>
+      </nav>
+    </div>
+  </header>
