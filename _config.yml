@@ -10,6 +10,7 @@ owner:
   avatar:         avatar.png
   email:          kristian.theilgaard@gmail.com
   github:         theilgaard
+  twitter:        ktheilgaard
   location:       "Copenhagen, Denmark"
   # Plug in your disqus shortname!
 
@@ -24,6 +25,9 @@ links:
     url: /about
   - title: Github
     url: https://github.com/theilgaard
+    external: true
+  - title: twitter
+    url: https://twitter.com/ktheilgaard
     external: true
   - title: Linkedin
     url: https://www.linkedin.com/in/ktheilgaard
