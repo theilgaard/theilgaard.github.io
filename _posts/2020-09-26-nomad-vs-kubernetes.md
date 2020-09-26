@@ -13,7 +13,7 @@ Our application is already containerized with docker, so picking a container orc
 # Container Orchestrators
 
 ## Why not Docker Compose or Docker Swarm?
-We have built the entire application stack using docker containers, both provided by images readily available on dockerhub and our own containerized code. This led us to a natural usage of docker-compose to orchestrate our stack when developing. The entire application stack includes rabbitmq, redis, celery and our product based on [django](https://www.djangoproject.com/) fronted by a gunicorn wsgi. 
+We have built the entire application stack using docker containers, both provided by images readily available on [dockerhub](https://hub.docker.com/) and our own containerized code. This led us to a natural usage of docker-compose to orchestrate our stack when developing. The entire application stack includes rabbitmq, redis, celery and our product based on [django](https://www.djangoproject.com/) fronted by a gunicorn wsgi. 
 
 Docker Compose is great as it allows us to spin up all of our containers and dependent applications in unison. It is simple to configure and we keep our compose file source controlled in the same repository as our code. However, while it is [certainly possible to use compose in production](https://docs.docker.com/compose/production/), we were hesitant as it doesn't quite qualify as an orchestrator, lacking replication, load balancing or rolling updates. 
 
