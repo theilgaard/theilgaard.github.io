@@ -36,22 +36,11 @@ links:
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/Copenhagen
 future:      true
-highlighter: rouge
-markdown:    kramdown
-
+makrdown: kramdown
 kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  syntax_highlighter: coderay
-
-  syntax_highlighter_opts:
-    line_numbers:
-    line_numbers_start: 1
-    tab_width: 4
-    bold_every: 10
-    css: class
+    syntax_highlighter_opts:
+        block:
+            line_numbers: true
 
 sass:
     style: :compressed

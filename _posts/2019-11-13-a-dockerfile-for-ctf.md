@@ -12,7 +12,7 @@ While the docker container offers some isolation from the host operating system,
 
 The [docker image source](https://github.com/epadctf/ctfbox) can be found on github, and a prebuilt image is automatically pushed to dockerhub under the `epadctf/ctfbox` tag.
 
-{%highlight docker %}
+```docker
 FROM ubuntu:latest
 MAINTAINER epadctf <epadctf@gmail.com>
 
@@ -86,4 +86,4 @@ RUN git clone https://github.com/epadctf/dotfiles.git /root/dotfiles \
 
 WORKDIR /root/ctf
 CMD ["/usr/bin/tmux"]
-{% endhighlight %}
+```

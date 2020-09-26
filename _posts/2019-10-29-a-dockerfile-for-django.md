@@ -12,7 +12,7 @@ Docker has become mainstream in production environments around the world, typica
 
 Recently I am developing a Django application I would like to deploy with Docker, and make as production ready as possible. Here is the Dockerfile I came up with.
 
-{% highlight docker %}
+```docker
 FROM debian:buster
 
 ENV POETRY_VERSION=0.12.17 \
@@ -56,7 +56,7 @@ RUN python manage.py collectstatic --noinput
 EXPOSE 8000
 
 CMD ["uwsgi", "--ini", "/opt/app/uwsgi.ini"]
-{% endhighlight %}
+```
 
 ### Walkthrough 
 

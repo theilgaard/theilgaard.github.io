@@ -19,7 +19,7 @@ In this example we can `post` a `username` and `password` field to a website vul
 
 So how does the login code work in the web application? It most probably fetches a username and password from the database, and compares them with the fields from the `post`. For this example, assume that the password will not be hashed, as this would break this particular example.
 
-{% highlight python %}
+```python
 #!/usr/bin/python
 
 import requests
@@ -53,7 +53,7 @@ while i < USER_LENGTH_MAX:
             i = i + 1
             break
 
-{% endhighlight %}
+```
 
 As you can see, our payload `boom` consists of the two fields `username` and `password`. We then iterate all possible printable characters in the username, and get the web application to compare the result for us. If we get logged in, then we found a matching character. 
 
